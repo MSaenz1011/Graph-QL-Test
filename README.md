@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# **GraphQL**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+​
 
-## Available Scripts
+## **_Questions about GraphQL_**
 
-In the project directory, you can run:
+​
 
-### `npm start`
+### **_1.- What is GraphQL?_**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+​
+GraphQL is a query language for APIs developed by Facebook. It enables clients to ask for exactly what they need from a server or Back-end application. It is considered REST APIs.
+​
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### **_2.- How is GraphQL different from REST?_**
 
-### `npm test`
+​
+The main difference between GraphQL and REST the use of a single endpoint for all queries, REST, on the other hadn, uses multiple endpoints.
+​
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### **_3.- What are the main components of a GraphQL query?_**
 
-### `npm run build`
+​
+The main components of a GraphQL query are: the query and arguments. The Query specifies the fields that will be returned while the arguments function like a filter.
+​
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### **_4.- What is a GraphQL schema?_**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+​
+It is the structure of the data present in a GraphQL API. It specifies the types of objects that can be queried and the relationships they may have
+​
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### **_5.- What is a resolver in GraphQL?_**
 
-### `npm run eject`
+​
+A resolver is a function that determines how to retrieve the data from a certain field. it is the intermmediary between the query and the DataBase.
+​
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### **_6.- How can you perform mutations in GraphQL?_**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+​
+TO mutate the data the client must send a request with a mutation operationin order to modify the data present in the server.
+​
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### **_7.- How does GraphQL handle errors?_**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+​
+Errors are returned as a response to the petition along with the data. It may be user-defined or a generic system message.
+​
 
-## Learn More
+### **_8.- Can you use GraphQL with any programming language?_**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+​
+It works with any language that can send HTTP requests, receive and process JSON responses.
+​
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### **_9.- What is the main problem that solves graphql and how is it solved?_**
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+​
+The main problem is over-fetching and under-fetching common in REST APIs. With REST, clients often receive more data than they need or must make multiple requests to retrieve all the necessary data. GraphQL solves this problem by allowing clients to specify exactly what data they need making any petition more efficient but also more detailed.
